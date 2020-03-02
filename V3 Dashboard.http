@@ -1,4 +1,9 @@
-GET https://www.qa.mvnctl.net/api/v1/_/metadata
+GET {{host}}/api/v1/_/metadata
+Accept: application/json
+
+###
+
+GET {{host}}/api/v1/_/geography/US
 Accept: application/json
 
 
