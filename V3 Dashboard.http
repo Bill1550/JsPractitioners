@@ -3,16 +3,31 @@ Accept: application/json
 
 
 ###
-POST https://www.qa.mvnctl.net/api/v1/api_key
+POST {{host}}/api/v1/api_key
 Content-Type: application/json
 Accept: application/json
 User-Agent: MAVEN_ANDROID
 x-Maven-Client: MAVEN_ANDROID/20111
 
 {
-  "email":"test+mvnqapreg03@mavenclinic.com",
-  "password":"simpleisawesome1*"
+  "email":"test+p001@mavenclinic.com",
+  "password":"passpass"
 }
+
+> {%
+      client.global.set("api-key", response.body.api_key)
+ %}
+###
+
+GET {{host}}/api/v1/me
+Content-Type: application/json
+Accept: application/json
+User-Agent: MAVEN_ANDROID
+x-Maven-Client: MAVEN_ANDROID/20111
+api-key: {{api-key}}
+
+
+
 ###
 
 GET https://www.qa.mvnctl.net/api/v1/users/57/dashboard
@@ -25,7 +40,7 @@ x-Maven-Client: MAVEN_ANDROID/20111
 ###
 
 GET https://www.qa.mvnctl.net/api/dashboard/
-api-key: 41b18e24-ef0a-4be4-978f-82fac756e19b
+api-key: 714c718e-9a4d-45d0-86e4-a37746aec334
 Content-Type: application/json
 Accept: application/json
 User-Agent: MAVEN_ANDROID
@@ -44,6 +59,15 @@ x-Maven-Client: MAVEN_ANDROID/20111
 
 GET https://www.qa.mvnctl.net/api/v1/me?include_profile=true
 api-key:4e7815c7-c2c2-4d2b-bab1-2b16ba2ae252
+Content-Type: application/json
+Accept: application/json
+User-Agent: MAVEN_ANDROID
+x-Maven-Client: MAVEN_ANDROID/20111
+
+###
+
+GET https://www.qa.mvnctl.net/api/dashboard/pregnancy-week-10
+api-key: 714c718e-9a4d-45d0-86e4-a37746aec334
 Content-Type: application/json
 Accept: application/json
 User-Agent: MAVEN_ANDROID

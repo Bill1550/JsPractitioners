@@ -2,7 +2,7 @@
 <module version="4">
   <component name="FacetManager">
     <facet type="kotlin-language" name="Kotlin">
-      <configuration version="3" platform="JavaScript " allPlatforms="JS []" useProjectSettings="false" isTestModule="true" externalProjectId="JsPractitioners" pureKotlinSourceFolders="C:\repos\tests\JsPractitioners\src\test\kotlin;C:\repos\tests\JsPractitioners\src\main\kotlin">
+      <configuration version="3" platform="JavaScript " allPlatforms="JS []" useProjectSettings="false" isTestModule="true" externalProjectId="JsPractitioners" pureKotlinSourceFolders="D:\repos\multiplatform\JsPractitioners\src\test\kotlin;D:\repos\multiplatform\JsPractitioners\src\main\kotlin">
         <sourceSets>
           <sourceSet>com.loneoaktech.JsPractitioners.main</sourceSet>
         </sourceSets>
