@@ -15,8 +15,8 @@ User-Agent: MAVEN_ANDROID
 x-Maven-Client: MAVEN_ANDROID/20111
 
 {
-  "email":"test+p001@mavenclinic.com",
-  "password":"passpass"
+  "email":"{{email}}",
+  "password":"{{password}}"
 }
 
 > {%
@@ -44,8 +44,8 @@ x-Maven-Client: MAVEN_ANDROID/20111
 
 ###
 
-GET https://www.qa.mvnctl.net/api/dashboard/
-api-key: 714c718e-9a4d-45d0-86e4-a37746aec334
+GET {{host}}/api/dashboard/
+api-key: {{api-key}}
 Content-Type: application/json
 Accept: application/json
 User-Agent: MAVEN_ANDROID
