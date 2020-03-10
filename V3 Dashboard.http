@@ -88,3 +88,12 @@ User-Agent: MAVEN_ANDROID
 X-Maven-Client: MAVEN_ANDROID/20111
 
 ###
+
+GET {{host}}/api/v1/booking_flow
+api-key: {{api-key}}
+Content-Type: application/json
+Accept: application/json
+User-Agent: MAVEN_ANDROID
+X-Maven-Client: MAVEN_ANDROID/20111
+
+###
