@@ -24,16 +24,29 @@ x-Maven-Client: MAVEN_ANDROID/20111
  %}
 ###
 
-GET {{host}}/api/v1/me
+GET {{host}}/api/v1/me?include_profile=true
 Content-Type: application/json
 Accept: application/json
 User-Agent: MAVEN_ANDROID
 x-Maven-Client: MAVEN_ANDROID/20111
 api-key: {{api-key}}
 
+###
 
+GET {{host}}/api/v2/_/vertical_groupings
+Accept: application/json
+User-Agent: MAVEN_ANDROID
+x-Maven-Client: MAVEN_ANDROID/20111
+api-key: {{api-key}}
 
 ###
+
+GET {{host}}/api/v1/booking_flow
+Accept: application/json
+User-Agent: MAVEN_ANDROID
+x-Maven-Client: MAVEN_ANDROID/20111
+api-key: {{api-key}}
+
 
 GET https://www.qa.mvnctl.net/api/v1/users/57/dashboard
 api-key: 41b18e24-ef0a-4be4-978f-82fac756e19b
@@ -95,5 +108,26 @@ Content-Type: application/json
 Accept: application/json
 User-Agent: MAVEN_ANDROID
 X-Maven-Client: MAVEN_ANDROID/20111
+
+###
+
+GET {{host}}/api/v1/appointments?scheduled_start=2014-01-01T00%3A00%3A00&scheduled_end=2020-03-15T20%3A52%3A54.603&limit=8&order_direction=desc
+api-key: {{api-key}}
+Content-Type: application/json
+Accept: application/json
+User-Agent: MAVEN_ANDROID
+X-Maven-Client: MAVEN_ANDROID/20111
+
+###
+
+POST {{host}}/api/v1/_/password_strength_score
+Content-Type: application/json
+Accept: application/json
+User-Agent: MAVEN_ANDROID
+X-Maven-Client: MAVEN_ANDROID/20111
+
+{
+  "password": "12345678"
+}
 
 ###
