@@ -48,6 +48,8 @@ x-Maven-Client: MAVEN_ANDROID/20111
 api-key: {{api-key}}
 
 
+###
+
 GET https://www.qa.mvnctl.net/api/v1/users/57/dashboard
 api-key: 41b18e24-ef0a-4be4-978f-82fac756e19b
 Content-Type: application/json
@@ -57,7 +59,7 @@ x-Maven-Client: MAVEN_ANDROID/20111
 
 ###
 
-GET {{host}}/api/dashboard/
+GET {{host}}/api/dashboard/pregnancy-week-39/
 api-key: {{api-key}}
 Content-Type: application/json
 Accept: application/json
@@ -84,7 +86,7 @@ x-Maven-Client: MAVEN_ANDROID/20111
 
 ###
 
-GET {{host}}/api/dashboard/pregnancy-week-10
+GET {{host}}/api/dashboard/pregnancy-week-42
 api-key: {{api-key}}
 Content-Type: application/json
 Accept: application/json
@@ -129,5 +131,15 @@ X-Maven-Client: MAVEN_ANDROID/20111
 {
   "password": "12345678"
 }
+
+
+###
+
+GET {{host}}/api/v1/appointments?scheduled_start=2020-04-01T12:00:00&scheduled_end=2020-04-05T00:00:00
+api-key: {{api-key}}
+Content-Type: application/json
+Accept: application/json
+User-Agent: MAVEN_ANDROID
+X-Maven-Client: MAVEN_ANDROID/20111
 
 ###
